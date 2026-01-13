@@ -833,10 +833,6 @@ public class Main {
 
         // Programação Orientada a Objetos | Classe, Metódos, Atributos, Herança, Encapsulamento, Polimorfismo
 
-        // Git e Github
-
-        // Intellij
-
         // Gerenciamento de Dependências (Maven)
 
         // Frameworks e Banco de Dados (Spring Boot, Hibernate, JUnit, SQL, ORM)
