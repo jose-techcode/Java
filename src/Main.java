@@ -835,6 +835,6 @@ public class Main {
 
         // Gerenciamento de Dependências (Maven)
 
-        // Frameworks e Banco de Dados (Spring Boot, Hibernate, JUnit, SQL, ORM)
+        // Frameworks e Banco de Dados (Spring Boot, Hibernate (SQL e ORM), JUnit)
     }
 }
