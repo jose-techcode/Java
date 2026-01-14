@@ -159,22 +159,22 @@ public class Main {
         //Scanner scanner = new Scanner(System.in);
         //try {
 
-            //System.out.println("Digite seu nome (texto): ");
-            //String nomee = scanner.nextLine(); // nextLine para texto
+        //System.out.println("Digite seu nome (texto): ");
+        //String nomee = scanner.nextLine(); // nextLine para texto
 
-            //System.out.println("Digite sua idade (número inteiro): ");
-            //int idadee = scanner.nextInt(); // nextInt para número inteiro e nextDouble para número decimal
+        //System.out.println("Digite sua idade (número inteiro): ");
+        //int idadee = scanner.nextInt(); // nextInt para número inteiro e nextDouble para número decimal
 
-            //System.out.println("Olá, " + nomee + "! Você tem " + idadee + " anos.");
+        //System.out.println("Olá, " + nomee + "! Você tem " + idadee + " anos.");
         //} catch (InputMismatchException e) {
-            //System.out.println("Tipo de argumento inválido passado a função: " + e.getMessage());
+        //System.out.println("Tipo de argumento inválido passado a função: " + e.getMessage());
         //} catch (NoSuchElementException e) {
-            //System.out.println("Não foi encontrado o elemento chamado: " + e.getMessage());
+        //System.out.println("Não foi encontrado o elemento chamado: " + e.getMessage());
         //} catch (Exception e) {
-            //System.out.println("Erro genérico: " + e.getMessage());
+        //System.out.println("Erro genérico: " + e.getMessage());
         //} finally {
-            //System.out.println("Café: Java");
-            //scanner.close();
+        //System.out.println("Café: Java");
+        //scanner.close();
         //}
 
         // --TIPOS DE DADOS E OPERADORES--
@@ -815,7 +815,7 @@ public class Main {
         try {
             ArrayList<Integer> lista = new ArrayList<>(Arrays.asList(1, 2, 3));
             System.out.println(lista.get(3));
-        } catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("Erro de acesso a um índice inválido em uma lista arraylist ou list: " + e.getMessage());
         }
 
