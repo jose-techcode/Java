@@ -38,11 +38,7 @@ public class Main {
             return false;
         }
         for (int i = 2; i <= valor;) {
-            if (valor % i == 0) {
-                return true;
-            } else {
-                return false;
-            }
+            return valor % i == 0;
         }
         return false;
     }
@@ -57,11 +53,7 @@ public class Main {
             return true;
         }
         for (int i = 2; i <= valorzinho;) {
-            if (valorzinho % i == 0) {
-                return false;
-            } else {
-                return true;
-            }
+            return valorzinho % i != 0;
         }
         return false;
     }
@@ -160,7 +152,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         // Scanner (Input/Output)
 
@@ -833,8 +825,8 @@ public class Main {
 
         // Programação Orientada a Objetos | Classe, Metódos, Atributos, Herança, Encapsulamento, Polimorfismo
 
-        // Gerenciamento de Dependências (Maven)
+        // Gerenciamento de Dependências (Gradle junto com JUnit)
 
-        // Frameworks e Banco de Dados (Spring Boot, Hibernate (SQL e ORM), JUnit)
+        // Outros (JUnit, IDEA (Android Plugins), Kotlin, SQL, Android SDK, Android Jetpack, Jetpack Compose)
     }
 }
