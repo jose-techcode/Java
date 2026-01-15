@@ -154,6 +154,26 @@ public class Main {
 
     static void main(String[] args) {
 
+        // ContaBancariaPrincipal
+
+        ContaBancariaPrincipal minha_Conta = new ContaBancariaPrincipal("José", 1000);
+
+        minha_Conta.getsaldo();
+        minha_Conta.deposito(500);
+        minha_Conta.saque(250);
+        minha_Conta.setsaldo();
+        minha_Conta.getsaldo();
+        //System.out.println("Saldo: " + minha_Conta.getsaldo());
+
+        ContaBancariaConjunta Conta_conjunta = new ContaBancariaConjunta();
+
+        Conta_conjunta.getsaldo();
+        Conta_conjunta.deposito(-50);
+        Conta_conjunta.saque(0);
+        Conta_conjunta.setsaldo();
+        Conta_conjunta.getsaldo();
+        //System.out.println("Saldo: " + Conta_conjunta.getsaldo());
+
         // Scanner (Input/Output)
 
         //Scanner scanner = new Scanner(System.in);
