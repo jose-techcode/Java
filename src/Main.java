@@ -1,3 +1,8 @@
+import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaConjunta;
+import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaPrincipal;
+import Funcionario_Gerente_Peao.Funcionario;
+import Funcionario_Gerente_Peao.Peao;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -154,25 +159,43 @@ public class Main {
 
     static void main(String[] args) {
 
-        // ContaBancariaPrincipal
+        // Package: ContaBancariaPrincipal_ContaBancariaConjunta
 
         ContaBancariaPrincipal minha_Conta = new ContaBancariaPrincipal("José", 1000);
 
-        minha_Conta.getsaldo();
+        minha_Conta.getSaldo();
         minha_Conta.deposito(500);
         minha_Conta.saque(250);
-        minha_Conta.setsaldo();
-        minha_Conta.getsaldo();
+        minha_Conta.setSaldo();
+        minha_Conta.getSaldo();
         //System.out.println("Saldo: " + minha_Conta.getsaldo());
 
         ContaBancariaConjunta Conta_conjunta = new ContaBancariaConjunta();
 
-        Conta_conjunta.getsaldo();
+        Conta_conjunta.getSaldo();
         Conta_conjunta.deposito(-50);
         Conta_conjunta.saque(0);
-        Conta_conjunta.setsaldo();
-        Conta_conjunta.getsaldo();
+        Conta_conjunta.setSaldo();
+        Conta_conjunta.getSaldo();
         //System.out.println("Saldo: " + Conta_conjunta.getsaldo());
+
+        // Package: Funcionario_Gerente_Peao
+
+        Funcionario funcionario0 = new Funcionario(100);
+
+        funcionario0.getSalarioPagamento();
+        funcionario0.salariopagamento(-50);
+        funcionario0.salariopagamento(0);
+        funcionario0.salariopagamento(100);
+        funcionario0.setSalarioPagamento();
+        funcionario0.getSalarioPagamento();
+
+        Peao peao = new Peao(1518);
+
+        peao.getSalarioPagamento();
+        peao.salariopagamento(-50);
+        peao.setSalarioPagamento();
+        peao.getSalarioPagamento();
 
         // Scanner (Input/Output)
 
@@ -843,7 +866,7 @@ public class Main {
         // System.out.println("Execução de código independente da exceção");
         // }
 
-        // Programação Orientada a Objetos | Classe, Metódos, Atributos, Herança, Encapsulamento, Polimorfismo
+        // Programação Orientada a Objetos | (Classe, Metódos, Atributos, Herança, Encapsulamento) Polimorfismo
 
         // Gerenciamento de Dependências (Gradle junto com JUnit)
 
