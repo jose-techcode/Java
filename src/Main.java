@@ -1,6 +1,7 @@
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaConjunta;
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaPrincipal;
 import Funcionario_Gerente_Peao.Funcionario;
+import Funcionario_Gerente_Peao.Gerente;
 import Funcionario_Gerente_Peao.Peao;
 
 import java.io.FileNotFoundException;
@@ -168,7 +169,6 @@ public class Main {
         minha_Conta.saque(250);
         minha_Conta.setSaldo();
         minha_Conta.getSaldo();
-        //System.out.println("Saldo: " + minha_Conta.getsaldo());
 
         ContaBancariaConjunta Conta_conjunta = new ContaBancariaConjunta();
 
@@ -177,7 +177,6 @@ public class Main {
         Conta_conjunta.saque(0);
         Conta_conjunta.setSaldo();
         Conta_conjunta.getSaldo();
-        //System.out.println("Saldo: " + Conta_conjunta.getsaldo());
 
         // Package: Funcionario_Gerente_Peao
 
@@ -190,10 +189,23 @@ public class Main {
         funcionario0.setSalarioPagamento();
         funcionario0.getSalarioPagamento();
 
+        Gerente gerente = new Gerente(5000);
+
+        gerente.getSalarioPagamento();
+        gerente.salariopagamento(-50);
+        gerente.salariopagamento(0);
+        gerente.salariopagamento(100);
+        gerente.salariopagamento(5500);
+        gerente.setSalarioPagamento();
+        gerente.getSalarioPagamento();
+
         Peao peao = new Peao(1518);
 
         peao.getSalarioPagamento();
         peao.salariopagamento(-50);
+        peao.salariopagamento(0);
+        peao.salariopagamento(100);
+        peao.salariopagamento(2000);
         peao.setSalarioPagamento();
         peao.getSalarioPagamento();
 
