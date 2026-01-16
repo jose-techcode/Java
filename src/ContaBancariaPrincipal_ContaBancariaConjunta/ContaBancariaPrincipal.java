@@ -1,15 +1,15 @@
+package ContaBancariaPrincipal_ContaBancariaConjunta;
+
 public class ContaBancariaPrincipal {
-    private final String titular;
     private double saldo;
 
     public ContaBancariaPrincipal(String titular, double saldo) {
-        this.titular = titular;
         this.saldo = saldo;
     }
 
     public void deposito(double valor) {
         if (valor > 0) {
-            saldo += valor;
+            this.saldo += valor;
             System.out.println("Depósito realizado: " + valor);
         } else {
             System.out.println("Valor deve ser maior que zero. Tente novamente.");
@@ -18,19 +18,19 @@ public class ContaBancariaPrincipal {
 
     public void saque(double valor) {
         if (valor > 0) {
-            saldo -= valor;
+            this.saldo -= valor;
             System.out.println("Saque realizado: " + valor);
         } else {
             System.out.println("Valor deve ser maior que zero. Tente novamente.");
         }
     }
 
-    public double getsaldo() {
+    public double getSaldo() {
         System.out.println("Saldo: " + this.saldo);
         return this.saldo;
     }
 
-    public void setsaldo() {
+    public void setSaldo() {
         System.out.println("Saldo não pode ser alterado diretamente!");
     }
 }
