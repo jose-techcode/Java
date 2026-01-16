@@ -48,6 +48,6 @@ public class ContaBancariaPrincipal {
     // Metódo Setter (simulado)
 
     public void setSaldo() {
-        System.out.println("Saldo não pode ser alterado diretamente!");
+        System.out.println("Simulação: Saldo não pode ser alterado diretamente!");
     }
 }
