@@ -878,8 +878,6 @@ public class Main {
         // System.out.println("Execução de código independente da exceção");
         // }
 
-        // Gerenciamento de Dependências (Gradle junto com JUnit)
-
-        // Outros (JUnit, IDEA (Android Plugins), Kotlin, SQL, Android SDK, Android Jetpack, Jetpack Compose)
+        // Android (Gradle, JUnit, IDEA (Android Plugins), Kotlin, SQL, Android SDK, Android Jetpack, Jetpack Compose)
     }
 }
