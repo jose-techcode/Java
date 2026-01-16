@@ -1,4 +1,8 @@
+// Pacote
+
 package ContaBancariaPrincipal_ContaBancariaConjunta;
+
+// Classe
 
 public class ContaBancariaConjunta extends ContaBancariaPrincipal {
 

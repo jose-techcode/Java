@@ -1,11 +1,22 @@
+// Pacote
+
 package ContaBancariaPrincipal_ContaBancariaConjunta;
 
+// Classe
+
 public class ContaBancariaPrincipal {
+
+    // Atributo (privado)
+
     private double saldo;
+
+    // Metódo Construtor
 
     public ContaBancariaPrincipal(String titular, double saldo) {
         this.saldo = saldo;
     }
+
+    // Metódo Setter
 
     public void deposito(double valor) {
         if (valor > 0) {
@@ -16,6 +27,8 @@ public class ContaBancariaPrincipal {
         }
     }
 
+    // Metódo Setter
+
     public void saque(double valor) {
         if (valor > 0) {
             this.saldo -= valor;
@@ -25,10 +38,14 @@ public class ContaBancariaPrincipal {
         }
     }
 
+    // Metódo Getter
+
     public double getSaldo() {
         System.out.println("Saldo: " + this.saldo);
         return this.saldo;
     }
+
+    // Metódo Setter (simulado)
 
     public void setSaldo() {
         System.out.println("Saldo não pode ser alterado diretamente!");
