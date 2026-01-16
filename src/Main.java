@@ -878,8 +878,6 @@ public class Main {
         // System.out.println("Execução de código independente da exceção");
         // }
 
-        // Programação Orientada a Objetos | (Classe, Metódos, Atributos, Herança, Encapsulamento) Polimorfismo
-
         // Gerenciamento de Dependências (Gradle junto com JUnit)
 
         // Outros (JUnit, IDEA (Android Plugins), Kotlin, SQL, Android SDK, Android Jetpack, Jetpack Compose)
