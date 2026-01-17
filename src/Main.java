@@ -877,7 +877,5 @@ public class Main {
         // } finally {
         // System.out.println("Execução de código independente da exceção");
         // }
-
-        // Android (Gradle, JUnit, IDEA (Android Plugins), Kotlin, SQL, Android SDK, Android Jetpack, Jetpack Compose)
     }
 }
