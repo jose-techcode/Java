@@ -237,8 +237,8 @@ public class Main {
         System.out.println("Java");
         System.out.println(5 + 5);
 
-        // int, Integer, float, Float, double, Double, String, char, Char, boolean, Boolean
-        // + - * / % = == != >= <= += -= new
+        // int (Integer), byte (Byte), short (Short), long (Long), float (Float), double (Double), String, char (Char), boolean (Boolean)
+        // + - * / % += -= *= /= = == > < != >= <= && || ! ++ -- ?: instanceof new
 
         // --ESTRUTURA DE CONTROLE--
 
