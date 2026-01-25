@@ -1,10 +1,18 @@
+// Pacote
+
 package Funcionario_Gerente_Peao;
 
+// Classe
+
 public class Gerente extends Funcionario {
+
+    // Metódo construtor com herança dos metódos e atributos da superclasse
 
     public Gerente(double salariopagamento) {
         super(salariopagamento);
     }
+
+    // Polimorfismo (metódo setter salariopagamento)
 
     @Override
     public double salariopagamento(double valor) {
