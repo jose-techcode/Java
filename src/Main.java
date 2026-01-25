@@ -354,7 +354,7 @@ public class Main {
         boolean qvw = (q && !v) || w;
         System.out.println(qvw);
 
-        // --ESTRUTURA DE DADOS--
+        // --ESTRUTURA DE DADOS-- OBS: Implementações das interfaces list, map e set
 
         // -Lista sem coleção 1 (String[])-
 
@@ -396,7 +396,7 @@ public class Main {
         System.out.println(Arrays.toString(fruta2));
         System.out.println(fruta2[1]);
 
-        // - Lista mutável (ArrayList)- O MELHOR E MAIS USADO
+        // - Lista mutável (ArrayList)-
 
         // Frutas
 
