@@ -877,5 +877,9 @@ public class Main {
         // } finally {
         // System.out.println("Execução de código independente da exceção");
         // }
+
+        // Estrutura de dados: pilha, fila, árvore, grafo
+        // Algoritmos: busca, ordenação, recursão
+        // Talvez: POO avançada (abstração, interface)
     }
 }
