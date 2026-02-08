@@ -158,6 +158,8 @@ public class Main {
         }
     }
 
+    // Algoritmos (busca e ordenação)
+
     static void main(String[] args) {
 
         // Package: ContaBancariaPrincipal_ContaBancariaConjunta
@@ -705,6 +707,10 @@ public class Main {
         System.out.println(numeros);
         System.out.println(numeros.getFirst());
 
+        // -Pilha-
+
+        // -Fila-
+
         // --FUNÇÕES--
 
         // Hello sem return
@@ -878,8 +884,7 @@ public class Main {
         // System.out.println("Execução de código independente da exceção");
         // }
 
-        // Estrutura de dados: pilha, fila, árvore, grafo
-        // Algoritmos: busca, ordenação, recursão
-        // Talvez: POO avançada (abstração, interface)
+        // Estrutura de dados: pilha, fila
+        // Algoritmos: busca, ordenação
     }
 }
