@@ -503,7 +503,7 @@ public class Main {
         boolean qvw = (q && !v) || w;
         System.out.println(qvw);
 
-        // --ESTRUTURA DE DADOS-- OBS: Implementações das interfaces list, map e set
+        // --ESTRUTURA DE DADOS--
 
         // -Lista sem coleção 1 (String[])-
 
@@ -547,7 +547,7 @@ public class Main {
 
         // - Lista mutável (ArrayList)-
 
-        // Frutas
+        // frutas
 
         ArrayList<String> frutas0 = new ArrayList<>(Arrays.asList("Maçã", "Banana"));
 
@@ -569,7 +569,7 @@ public class Main {
         System.out.println(frutas0);
         System.out.println(frutas0.getFirst());
 
-        // Nomes
+        // nomes
 
         ArrayList<String> nomes = new ArrayList<>(Arrays.asList("José", "João"));
 
@@ -591,7 +591,7 @@ public class Main {
         System.out.println(nomes);
         System.out.println(nomes.get(1));
 
-        // Números inteiros
+        // números inteiros
 
         ArrayList<Integer> numeros_int = new ArrayList<>(Arrays.asList(1, 2));
 
@@ -613,7 +613,7 @@ public class Main {
         System.out.println(numeros_int);
         System.out.println(numeros_int.get(2));
 
-        // Números decimais
+        // números decimais
 
         ArrayList<Double> numeros_decimais = new ArrayList<>(Arrays.asList(7.0, 6.5));
 
@@ -637,7 +637,7 @@ public class Main {
 
         // -Lista imutável (List)-
 
-        // Frutas
+        // frutas
 
         List<String> frutas1 = List.of("Maçã", "Banana");
 
@@ -656,7 +656,7 @@ public class Main {
 
         // -Lista mutável encadeada (LinkedList)-
 
-        // Nomes
+        // nomes
 
         LinkedList<String> nomes0 = new LinkedList<>();
 
@@ -680,7 +680,7 @@ public class Main {
         System.out.println(nomes0);
         System.out.println(nomes0.getFirst());
 
-        // Notas
+        // notas
 
         LinkedList<Double> notas0 = new LinkedList<>();
 
@@ -706,7 +706,7 @@ public class Main {
 
         // -Dicionário/Mapa (HashMap)-
 
-        // Alunos
+        // alunos
 
         HashMap<String, Double> alunos = new HashMap<>();
 
@@ -740,7 +740,7 @@ public class Main {
 
         System.out.println("Alunos: " + alunos);
 
-        // Pessoas
+        // pessoas
 
         HashMap<String, Integer> pessoas = new HashMap<>();
 
@@ -776,6 +776,8 @@ public class Main {
 
         // -Dicionário/Mapa encadeado (LinkedHashMap)-
 
+        // alunos_notas
+
         LinkedHashMap<String, Double> alunos_notas = new LinkedHashMap<>();
 
         alunos_notas.put("Josafá", 7.5);
@@ -810,6 +812,8 @@ public class Main {
 
         // -Conjunto (HashSet)-
 
+        // funcionarios
+
         HashSet<String> funcionarios = new HashSet<>();
 
         funcionarios.add("Maria");
@@ -832,6 +836,8 @@ public class Main {
 
         // -Conjunto encadeado (LinkedHashSet)-
 
+        // numeros
+
         LinkedHashSet<Integer> numeros = new LinkedHashSet<>();
 
         numeros.add(0);
@@ -853,6 +859,62 @@ public class Main {
 
         System.out.println(numeros);
         System.out.println(numeros.getFirst());
+
+        // -Pilha (Deque, ArrayDeque)-
+
+        // numeros_pilha
+
+        Deque<Integer> numeros_pilha = new ArrayDeque<>();
+
+        numeros_pilha.addFirst(1); // offerFirst
+        numeros_pilha.addFirst(2); // offerFirst
+        numeros_pilha.addFirst(3); // offerFirst
+
+        System.out.println("Tamanho da pilha antes: " + numeros_pilha.size());
+        System.out.println("Topo da pilha: " + numeros_pilha.peek());
+        System.out.println("Tirar da pilha: " + numeros_pilha.removeFirst());
+        System.out.println("Tamanho da pilha depois: " + numeros_pilha.size());
+
+        // paginas_pilha
+
+        Deque<String> paginas_pilha = new ArrayDeque<>();
+
+        paginas_pilha.addFirst("Página A"); // offerFirst
+        paginas_pilha.addFirst("Página B"); // offerFirst
+        paginas_pilha.addFirst("Página C"); // offerFirst
+
+        System.out.println("Tamanho da pilha antes: " + paginas_pilha.size());
+        System.out.println("Topo da pilha: " + paginas_pilha.peek());
+        System.out.println("Tirar da pilha: " + paginas_pilha.removeFirst());
+        System.out.println("Tamanho da pila depois: " + paginas_pilha.size());
+
+        // -Fila (Queue, ArrayDeque)-
+
+        // numeros_fila
+
+        Queue<Integer> numeros_fila = new ArrayDeque<>();
+
+        numeros_fila.add(1);
+        numeros_fila.add(2);
+        numeros_fila.add(3);
+
+        System.out.println("Tamanho da fila antes: " + numeros_fila.size());
+        System.out.println("Início da fila: " + numeros_fila.peek());
+        System.out.println("Tirar da fila: " + numeros_fila.poll());
+        System.out.println("Tamanho da fila depois: " + numeros_fila.size());
+
+        // pessoas_fila
+
+        Queue<String> pessoas_fila = new ArrayDeque<>();
+
+        pessoas_fila.add("José");
+        pessoas_fila.add("João");
+        pessoas_fila.add("Maria");
+
+        System.out.println("Tamanho da fila antes: " + pessoas_fila.size());
+        System.out.println("Início da fila: " + pessoas_fila.peek());
+        System.out.println("Tirar da fila: " + pessoas_fila.poll());
+        System.out.println("Tamanho da fila depois: " + pessoas_fila.size());
 
         // --FUNÇÕES--
 
