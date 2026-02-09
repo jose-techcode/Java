@@ -247,6 +247,7 @@ public class Main {
         if (lista.length <= 1) {
             return lista;
         }
+
         int meio = (lista.length) / 2;
 
         int[] esquerda = new int[meio];
@@ -259,7 +260,7 @@ public class Main {
         }
 
         System.arraycopy(lista, 0, esquerda, 0, meio);
-        if (lista.length - meio >= 0) System.arraycopy(lista, meio, direita, meio - meio, lista.length - meio);
+        if (lista.length - meio >= 0) System.arraycopy(lista, meio, direita, 0, lista.length - meio);
 
         esquerda = mergesort(esquerda);
         direita = mergesort(direita);
@@ -286,6 +287,25 @@ public class Main {
     }
 
     // Quicksort
+
+    public static int[] quicksort(int[] lista) {
+        if (lista.length <= 1) {
+            return lista;
+        } else {
+            int pivo = lista[lista.length / 2];
+            int[] esquerda = java.util.Arrays.stream(lista).filter(x -> x < pivo).toArray();
+            int[] meio = java.util.Arrays.stream(lista).filter(x -> x == pivo).toArray();
+            int[] direita = java.util.Arrays.stream(lista).filter(x -> x > pivo).toArray();
+
+            return concatenar(quicksort(esquerda), meio, quicksort(direita));
+        }
+    }
+
+    private static int[] concatenar(int[]... arrays) {
+        return java.util.Arrays.stream(arrays)
+                .flatMapToInt(java.util.Arrays::stream)
+                .toArray();
+    }
 
     static void main(String[] args) {
 
@@ -944,14 +964,14 @@ public class Main {
         // Mergesort
 
         int[] merge_lista = {5, 32452, 176, 42, 43, 177, 154, 277, 344, 10000, 9797, 570, 890, 100, 23, 26, 57, 154, 680, 6767, 13102, 4300};
-        merge_lista = mergesort(merge_lista);
-        System.out.println("Lista ordenada com mergesort: ");
-        for (int item : merge_lista) {
-            System.out.print(item + " ");
-        }
-        System.out.println(" ");
+        int[] ordenacao2 = mergesort(merge_lista);
+        System.out.println("Lista ordenada com mergesort: " + Arrays.toString(ordenacao2));
 
         // Quicksort
+
+        int[] quicksort_lista = {438653634, 5, 2, 4234, 7675, 8654, 853453, 8123, 1293, 843571, 5732, 6886, 456, 321, 43, 56, 78, 89, 61, 10, 6, 7, 8, 0, 3484, 9237, 294171, 63471521, 97854};
+        int[] ordenacao3 = quicksort(quicksort_lista);
+        System.out.println("Lista ordenada com quicksort: " + Arrays.toString(ordenacao3));
 
         // --TRATAMENTO DE ERROS--
 
