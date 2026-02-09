@@ -158,7 +158,7 @@ public class Main {
         }
     }
 
-    // -Algoritmos (busca e ordenação)-
+    // -Algoritmos (busca e ordenação/recursão)-
 
     // Busca linear
 
@@ -854,10 +854,6 @@ public class Main {
         System.out.println(numeros);
         System.out.println(numeros.getFirst());
 
-        // -Pilha-
-
-        // -Fila-
-
         // --FUNÇÕES--
 
         // Hello sem return
@@ -929,7 +925,7 @@ public class Main {
 
         //nome_idade();
 
-        // -Algoritmos (busca e ordenação)-
+        // -Algoritmos (busca e ordenação/recursão)-
 
         // Busca linear
 
@@ -1074,8 +1070,5 @@ public class Main {
         // } finally {
         // System.out.println("Execução de código independente da exceção");
         // }
-
-        // Estrutura de dados: pilha, fila
-        // Algoritmos: busca, ordenação
     }
 }
