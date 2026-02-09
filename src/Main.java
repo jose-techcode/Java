@@ -158,7 +158,92 @@ public class Main {
         }
     }
 
-    // Algoritmos (busca e ordenação)
+    // -Algoritmos (busca e ordenação)-
+
+    // Busca linear
+
+    public static int busca_linear(int[] lista, int item) {
+        for (int i = 0; i < lista.length; i++) {
+            if (lista[i] == item) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    // Busca binária
+
+    public static int busca_binaria(int[] lista, int item) {
+        int esquerda = 0;
+        int direita = (lista.length) - 1;
+        while (esquerda <= direita) {
+            int meio = (esquerda + direita) / 2;
+            if (lista[meio] == item) {
+                return meio;
+            }
+            if (lista[meio] < item) {
+                esquerda = meio + 1;
+            } else {
+                direita = meio - 1;
+            }
+        }
+        return -1;
+    }
+
+    // Bubblesort
+
+    public static int[] bubblesort(int[] lista) {
+        int x = lista.length;
+        for (int i = 0; i < x - 1; i++) {
+            for (int j = 0; j < x - i - 1; j++) {
+                if (lista[j] > lista[j + 1]) {
+                    int temp = lista[j];
+                    lista[j] = lista[j + 1];
+                    lista[j + 1] = temp;
+                }
+            }
+        }
+        return lista;
+    }
+
+    // Selectionsort
+
+    public static int[] selectionsort(int[] lista) {
+        int x = lista.length;
+        for (int i = 0; i < x - 1; i++) {
+            int menor = i;
+            for (int j = i + 1; j < x; j++) {
+                if (lista[j] < lista[menor]) {
+                    menor = j;
+                }
+            }
+            if (menor != i) {
+                int temp = lista[i];
+                lista[i] = lista[menor];
+                lista[menor] = temp;
+            }
+        }
+        return lista;
+    }
+
+    // Insertiosort
+
+    public static int[] insertionsort(int[] lista) {
+        for (int i = 0; i < lista.length; i++) {
+            int chave = lista[i];
+            int j = i - 1;
+            while (j >= 0 && lista[j] > chave) {
+                lista[j + 1] = lista[j];
+                j -= 1;
+            }
+            lista[j + 1] = chave;
+        }
+        return lista;
+    }
+
+    // Mergesort
+
+    // Quicksort
 
     static void main(String[] args) {
 
@@ -781,6 +866,42 @@ public class Main {
         // Scanner (texto e número)
 
         //nome_idade();
+
+        // -Algoritmos (busca e ordenação)-
+
+        // Busca linear
+
+        int[] listinha = {3, 2, 4, 1};
+        int busca = busca_linear(listinha, 4);
+        System.out.println("O item foi encontrado na posição: " + busca);
+
+        // Busca binária
+
+        int[] listinha_binaria = {1, 2, 3, 4};
+        int busca_binaria = busca_binaria(listinha_binaria, 2);
+        System.out.println("O item foi encontrado na posição binária: " + busca_binaria);
+
+        // Bubblesort
+
+        int[] bubble_lista = {7, 4, 11, 17, 14};
+        int[] ordenacao = bubblesort(bubble_lista);
+        System.out.println("Lista ordenada com bubblesort: " + Arrays.toString(ordenacao));
+
+        // Selectionsort
+
+        int[] selection_lista = {5, 4, 7, 17, 14, 21, 27, 24, 57, 43, 100, 99};
+        int[] ordenacao0 = selectionsort(selection_lista);
+        System.out.println("Lista ordenada com selectionsort: " + Arrays.toString(ordenacao0));
+
+        // Insertiosort
+
+        int[] insertion_lista = {3, 4, 7, 5, 17, 14, 20, 57, 43, 67, 84, 107, 95, 87, 84, 247, 133};
+        int[] ordenacao1 = selectionsort(insertion_lista);
+        System.out.println("Lista ordenada com insertionsort: " + Arrays.toString(ordenacao1));
+
+        // Mergesort
+
+        // Quicksort
 
         // --TRATAMENTO DE ERROS--
 
