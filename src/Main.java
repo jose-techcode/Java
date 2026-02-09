@@ -43,7 +43,7 @@ public class Main {
         if (valor == 0) {
             return false;
         }
-        for (int i = 2; i <= valor;) {
+        for (int i = 2; i <= valor; ) {
             return valor % i == 0;
         }
         return false;
@@ -58,7 +58,7 @@ public class Main {
         if (valorzinho == 1) {
             return true;
         }
-        for (int i = 2; i <= valorzinho;) {
+        for (int i = 2; i <= valorzinho; ) {
             return valorzinho % i != 0;
         }
         return false;
@@ -242,6 +242,48 @@ public class Main {
     }
 
     // Mergesort
+
+    public static int[] mergesort(int[] lista) {
+        if (lista.length <= 1) {
+            return lista;
+        }
+        int meio = (lista.length) / 2;
+
+        int[] esquerda = new int[meio];
+        int[] direita;
+
+        if (lista.length % 2 == 0) {
+            direita = new int[meio];
+        } else {
+            direita = new int[meio + 1];
+        }
+
+        System.arraycopy(lista, 0, esquerda, 0, meio);
+        if (lista.length - meio >= 0) System.arraycopy(lista, meio, direita, meio - meio, lista.length - meio);
+
+        esquerda = mergesort(esquerda);
+        direita = mergesort(direita);
+
+        int[] lista_mesclada = new int[lista.length];
+        int i, j, k;
+        i = j = k = 0;
+
+        while (i < esquerda.length && j < direita.length) {
+            if (esquerda[i] <= direita[j]) {
+                lista_mesclada[k++] = esquerda[i++];
+            } else {
+                lista_mesclada[k++] = direita[j++];
+            }
+        }
+        while (i < esquerda.length) {
+            lista_mesclada[k++] = esquerda[i++];
+        }
+
+        while (j < direita.length) {
+            lista_mesclada[k++] = direita[j++];
+        }
+        return lista_mesclada;
+    }
 
     // Quicksort
 
@@ -900,6 +942,14 @@ public class Main {
         System.out.println("Lista ordenada com insertionsort: " + Arrays.toString(ordenacao1));
 
         // Mergesort
+
+        int[] merge_lista = {5, 32452, 176, 42, 43, 177, 154, 277, 344, 10000, 9797, 570, 890, 100, 23, 26, 57, 154, 680, 6767, 13102, 4300};
+        merge_lista = mergesort(merge_lista);
+        System.out.println("Lista ordenada com mergesort: ");
+        for (int item : merge_lista) {
+            System.out.print(item + " ");
+        }
+        System.out.println(" ");
 
         // Quicksort
 
