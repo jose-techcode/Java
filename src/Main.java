@@ -1060,16 +1060,6 @@ public class Main {
             System.out.println("Erro de arquivo não encontrado: " + e.getMessage());
         }
 
-        // FileNotFoundException + IOException
-
-        try {
-            FileReader arquivo_io_inexistente = new FileReader("requirements.txt");
-        } catch (FileNotFoundException e) {
-            System.out.println("Erro de pasta ou arquivo não existente: " + e.getMessage());
-        } catch (IOException e) {
-            System.out.println("Erro de entrada/saída: " + e.getMessage());
-        }
-
         // } finally {
         // System.out.println("Execução de código independente da exceção");
         // }
