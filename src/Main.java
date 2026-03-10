@@ -1,8 +1,10 @@
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaConjunta;
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaPrincipal;
+import DevFront_DevBack_DevFull.DevFull;
 import Funcionario_Gerente_Peao.Funcionario;
 import Funcionario_Gerente_Peao.Gerente;
 import Funcionario_Gerente_Peao.Peao;
+import Python_Assembly.Assembly;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -357,6 +359,21 @@ public class Main {
         peao.salariopagamento(2000);
         peao.setSalarioPagamento();
         peao.getSalarioPagamento();
+
+        // Package: DevFront_DevBack_DevFull
+
+        DevFull devFull = new DevFull();
+
+        devFull.Tela_de_sistema();
+        devFull.Logica_de_sistema();
+        devFull.FullStack();
+
+        // Package: Python_Assembly
+
+        Assembly python_Assembly = new Assembly();
+
+        python_Assembly.Gerenciamento_de_registradores();
+        python_Assembly.Gerenciamento_de_memoria();
 
         // Scanner (Input/Output)
 
