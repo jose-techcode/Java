@@ -2,7 +2,7 @@
 
 package Funcionario_Gerente_Peao;
 
-// Polimorfismo com herança única: classe. Polimorfismo com herança múltipla: interface.
+// Polimorfismo com herança única: classe com extends. Polimorfismo com herança múltipla: interface com implements.
 
 public class Funcionario {
 
