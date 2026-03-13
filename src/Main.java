@@ -39,7 +39,7 @@ public class Main {
         return a - b;
     }
 
-    // Par
+    // Par (gambiarra)
 
     public static boolean par(int valor) {
         if (valor == 0) {
@@ -51,7 +51,7 @@ public class Main {
         return false;
     }
 
-    // Ímpar
+    // Ímpar (gambiarra)
 
     public static boolean impar(int valorzinho) {
         if (valorzinho == 0) {
@@ -62,6 +62,20 @@ public class Main {
         }
         for (int i = 2; i <= valorzinho; ) {
             return valorzinho % i != 0;
+        }
+        return false;
+    }
+
+    // Par_Impar
+
+    public static boolean par_impar(int valorzao) {
+        if (valorzao == 0) {
+            System.out.println("0 não é par!");
+        }
+        if (valorzao % 2 == 0) {
+            System.out.println(valorzao + " é par");
+        } else {
+            System.out.println(valorzao + " é ímpar");
         }
         return false;
     }
@@ -971,6 +985,11 @@ public class Main {
         } else {
             System.out.println(ehimpar + " não é ímpar");
         }
+
+        // Par_Impar
+
+        int ehparouimpar = 2;
+        par_impar(ehparouimpar);
 
         // Primo
 
