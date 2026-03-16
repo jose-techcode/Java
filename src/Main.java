@@ -1,3 +1,4 @@
+import ArvoreBinaria_Grafo.Grafo;
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaConjunta;
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaPrincipal;
 import DevFront_DevBack_DevFull.DevFull;
@@ -946,6 +947,30 @@ public class Main {
         System.out.println("Início da fila: " + pessoas_fila.peek());
         System.out.println("Tirar da fila: " + pessoas_fila.poll());
         System.out.println("Tamanho da fila depois: " + pessoas_fila.size());
+
+        // -Grafo (Package: ArvoreBinaria_Grafo. Class: Grafo)-
+
+        // Não orientado (bidirecional)
+
+        Grafo grafoNaoOrientada = new Grafo();
+
+        grafoNaoOrientada.adicionarArestaNaoOrientada(1, 2);
+        grafoNaoOrientada.adicionarArestaNaoOrientada(3, 4);
+        grafoNaoOrientada.adicionarArestaNaoOrientada(8, 7);
+
+        System.out.println("Grafos Não Orientados: ");
+        grafoNaoOrientada.ver();
+
+        // Orientado (direcional)
+
+        Grafo grafoOrientado = new Grafo();
+
+        grafoOrientado.adicionarArestaOrientada(100, 200);
+        grafoOrientado.adicionarArestaOrientada(300, 400);
+        grafoOrientado.adicionarArestaOrientada(800, 700);
+
+        System.out.println("Grafos Orientados: ");
+        grafoOrientado.ver();
 
         // --FUNÇÕES--
 
