@@ -1,3 +1,4 @@
+import ArvoreBinaria_Grafo.ArvoreBinaria;
 import ArvoreBinaria_Grafo.Grafo;
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaConjunta;
 import ContaBancariaPrincipal_ContaBancariaConjunta.ContaBancariaPrincipal;
@@ -19,7 +20,7 @@ public class Main {
     // Hello sem return
 
     public static void Hello() {
-        System.out.println("Hello");
+        System.out.println(" \n" + "Hello");
     }
 
     // Hello com return
@@ -971,6 +972,16 @@ public class Main {
 
         System.out.println("Grafos Orientados: ");
         grafoOrientado.ver();
+
+        // -Árvore Binária (Package: ArvoreBinaria_Grafo. Class: ArvoreBinaria & Node)-
+
+        ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
+
+        arvoreBinaria.inserir(10);
+        arvoreBinaria.inserir(6);
+        arvoreBinaria.inserir(14);
+
+        arvoreBinaria.percorrer();
 
         // --FUNÇÕES--
 
