@@ -176,6 +176,95 @@ public class Main {
         }
     }
 
+    // Contagem de vogais
+
+    public static boolean contagem_de_vogais(String palavra) {
+
+        LinkedHashMap<String, Integer> vogais = new LinkedHashMap<>();
+
+        vogais.put("a", 0);
+        vogais.put("e", 0);
+        vogais.put("i", 0);
+        vogais.put("o", 0);
+        vogais.put("u", 0);
+
+        for (int i = 0; i < palavra.length(); i++) {
+            String letra = String.valueOf(palavra.charAt(i)).toLowerCase();
+
+            if (vogais.containsKey(letra)) {
+                vogais.put(letra, vogais.get(letra) + 1);
+            }
+        }
+        System.out.println("Contagem: " + vogais);
+        return true;
+    }
+
+    // Soma de pares
+
+    public static void soma_de_pares() {
+
+        ArrayList<Integer> pares = new ArrayList<>();
+
+        pares.add(2);
+        pares.add(4);
+        pares.add(6);
+
+        int soma = 0;
+        for (Integer par : pares) {
+            soma += par;
+        }
+
+        System.out.println("Soma de pares: " + soma);
+    }
+
+    // Média aritmética
+
+    public static void media_aritmetica() {
+
+        ArrayList<Integer> valores = new ArrayList<>();
+
+        valores.add(5);
+        valores.add(10);
+        valores.add(30);
+
+        int soma = 0;
+        int media = 0;
+        for (Integer valor : valores) {
+            soma += valor;
+            media = soma / 3;
+        }
+
+        System.out.println("Média aritmética: " + media);
+    }
+
+    public static void fibonacci() {
+
+        LinkedList<Integer> algarismos = new LinkedList<>();
+
+        algarismos.add(0);
+        algarismos.add(1);
+        algarismos.add(2);
+        algarismos.add(3);
+
+        int soma_fibonacci = 0;
+        for (int i = 0; i < algarismos.size(); i++) {
+            soma_fibonacci += i;
+        }
+
+        System.out.println("Soma de fibonacci: " + soma_fibonacci);
+    }
+
+//    public static void fatorial() {
+//
+//        LinkedList<Integer> fatorial_de_5 = new LinkedList<>();
+//
+//        fatorial_de_5.add(1);
+//        fatorial_de_5.add(2);
+//        fatorial_de_5.add(3);
+//        fatorial_de_5.add(4);
+//        fatorial_de_5.add(5);
+//    }
+
     // -Algoritmos (busca e ordenação/recursão)-
 
     // Busca linear
@@ -1044,6 +1133,22 @@ public class Main {
         } else {
             System.out.println(ehcomposto + " não é composto");
         }
+
+        // Contagem de vogais
+
+        contagem_de_vogais("matematico");
+
+        // Soma de pares
+
+        soma_de_pares();
+
+        // Média aritmética
+
+        media_aritmetica();
+
+        // Fibonacci
+
+        fibonacci();
 
         // Scanner (texto)
 
