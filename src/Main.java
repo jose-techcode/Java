@@ -254,16 +254,23 @@ public class Main {
         System.out.println("Soma de fibonacci: " + soma_fibonacci);
     }
 
-//    public static void fatorial() {
-//
-//        LinkedList<Integer> fatorial_de_5 = new LinkedList<>();
-//
-//        fatorial_de_5.add(1);
-//        fatorial_de_5.add(2);
-//        fatorial_de_5.add(3);
-//        fatorial_de_5.add(4);
-//        fatorial_de_5.add(5);
-//    }
+    public static void fatorial() {
+
+        LinkedList<Integer> fatorial_de_5 = new LinkedList<>();
+
+        fatorial_de_5.add(1);
+        fatorial_de_5.add(2);
+        fatorial_de_5.add(3);
+        fatorial_de_5.add(4);
+        fatorial_de_5.add(5);
+
+        int multiplicacao = 1;
+        for (Integer fatorial : fatorial_de_5) {
+            multiplicacao *= fatorial;
+        }
+
+        System.out.println("Fatorial de 5: " + multiplicacao);
+    }
 
     // -Algoritmos (busca e ordenação/recursão)-
 
@@ -1149,6 +1156,10 @@ public class Main {
         // Fibonacci
 
         fibonacci();
+
+        // Fatorial
+
+        fatorial();
 
         // Scanner (texto)
 
