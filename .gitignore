@@ -1,0 +1,39 @@
+# Virtual environment
+
+.venv/
+
+# Environment
+
+.env
+
+# Cache of Python
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+
+*.log
+
+# IDE/Editor Settings
+
+.vscode/
+.idea/
+*.swp
+
+# System files
+
+.DS_Store
+Thumbs.db
+
+# Sockets and local banks
+
+*.db
+*.sock
+
+# Others
+
+*.bak
+*.tmp
