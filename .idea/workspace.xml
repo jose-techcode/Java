@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c4a9444-98f9-4cb4-9376-5bdbfaea6d2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Java-PythonGoBashC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArvoreBinaria_Grafo/ArvoreBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/ArvoreBinaria_Grafo/ArvoreBinaria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArvoreBinaria_Grafo/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/ArvoreBinaria_Grafo/Grafo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArvoreBinaria_Grafo/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/ArvoreBinaria_Grafo/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaConjunta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaConjunta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevFront_DevBack_DevFull/DevBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/DevFront_DevBack_DevFull/DevBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevFront_DevBack_DevFull/DevFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/DevFront_DevBack_DevFull/DevFront.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DevFront_DevBack_DevFull/DevFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/DevFront_DevBack_DevFull/DevFull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario_Gerente_Peao/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Funcionario_Gerente_Peao/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario_Gerente_Peao/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Funcionario_Gerente_Peao/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario_Gerente_Peao/Peao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Funcionario_Gerente_Peao/Peao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Python_Assembly/Assembly.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Python_Assembly/Assembly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Python_Assembly/Python.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Python_Assembly/Python.java" afterDir="false" />
+    <list default="true" id="9c4a9444-98f9-4cb4-9376-5bdbfaea6d2f" name="Changes" comment="Addition of automatic details">
+      <change beforePath="$PROJECT_DIR$/bash/basico_intermediario.sh" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/bash/basico_intermediario.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c/alocacao_memoria.c" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/c/alocacao_memoria.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/basico_intermediario.go" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/go/basico_intermediario.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/ArvoreBinaria_Grafo/ArvoreBinaria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/ArvoreBinaria_Grafo/Grafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/ArvoreBinaria_Grafo/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaConjunta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/DevFront_DevBack_DevFull/DevBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/DevFront_DevBack_DevFull/DevFront.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/DevFront_DevBack_DevFull/DevFull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/Funcionario_Gerente_Peao/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/Funcionario_Gerente_Peao/Gerente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/Funcionario_Gerente_Peao/Peao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/Python_Assembly/Assembly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-PythonGoBashC/Python_Assembly/Python.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/ArvoreBinaria_Grafo/ArvoreBinaria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/ArvoreBinaria_Grafo/Grafo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/ArvoreBinaria_Grafo/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaConjunta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/ContaBancariaPrincipal_ContaBancariaConjunta/ContaBancariaPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DevFront_DevBack_DevFull/DevBack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DevFront_DevBack_DevFull/DevFront.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/DevFront_DevBack_DevFull/DevFull.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Funcionario_Gerente_Peao/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Funcionario_Gerente_Peao/Gerente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Funcionario_Gerente_Peao/Peao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Python_Assembly/Assembly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Python_Assembly/Python.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/algoritmos.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/algoritmos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/basico_intermediario.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/basico_intermediario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/basico_intermediario_interativo.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/basico_intermediario_interativo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/estrutura_de_dados.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/estrutura_de_dados.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/exercicio.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/exercicio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/exercicio_interativo.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/exercicio_interativo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/poo.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/poo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/py/tudo_novamente.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonGoBashC/py/tudo_novamente.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +87,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PythonGoBashC" />
       <recent name="$PROJECT_DIR$/Java" />
     </key>
   </component>
@@ -116,14 +136,34 @@
       <option name="project" value="LOCAL" />
       <updated>1780260448710</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Addition of automatic details">
+      <option name="closed" value="true" />
+      <created>1780260478805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780260478805</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Big refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Big refactor" />
+    <MESSAGE value="Addition of automatic details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of automatic details" />
   </component>
 </project>
